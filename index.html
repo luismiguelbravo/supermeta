@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    var color = 0;
+    function startTime() {
+      if (color == 0) {
+        document.body.style.backgroundColor = "red"; 
+      } 
+      if (color == 1) {
+        document.body.style.backgroundColor = "green";
+      } 
+      if (color == 2) {
+        document.body.style.backgroundColor = "blue";
+      } 
+      if (color == 3) {
+        document.body.style.backgroundColor = "white";
+      } 
+      color++;
+      if (color > 2) color = 0;
+      var t = setTimeout(startTime, 17);
+    }
+  </script>
+</head>
+  <body onload="startTime()">
+  </body>
+</html>
